@@ -25,7 +25,8 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              { "glob": "**/*", "input": "node_modules/ng2-pdfjs-viewer/pdfjs", "output": "/assets/pdfjs" }
             ],
             "styles": [
               "src/styles.scss"
@@ -123,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "fileViewer"
+    }
+  },
+  "defaultProject": "fileViewer",
+  "cli": {
+    "analytics": "61cf7333-e4cc-4751-92df-fa1e06046957"
+  }
 }
